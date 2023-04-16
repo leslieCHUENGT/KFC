@@ -1,24 +1,16 @@
-<view class="page home">
-  <view class="page__hd">
-    <swiper 
-      class="tst_banners" 
-      indicator-dots="true"
-      autoplay="true"
-      interval="3000"
-    >
-      <block wx:for="{{banners}}" wx:key="id">
-        <swiper-item>
-          <navigator>
-            <image src="{{item.pic}}"/>
-          </navigator>
-        </swiper-item>
-      </block>
-    </swiper>
+<L-navigator bind:tap="goTop"></L-navigator>
+<scroll-view scroll-y style="margin-top:120rpx;height:100vh"  scroll-with-animation="true" scroll-top="{{topNum}}">
+<view class="_container">
+  <L-platoon/>
+  <view class="container_head">
+  <L-map bindtap="mapClick"/> <L-privacy/>
   </view>
-  <view class="page__bd">
-    <view class="tst_userinfo">
-    </view>
-    <view class="tst_way">
-    </view>
-  </view>
-</view> 
+  <L-index_head></L-index_head>
+  <L-index_body></L-index_body>
+  <L_swiper images="{{banners}}"></L_swiper>
+  <L-index_foot></L-index_foot>
+</view>
+</scroll-view>
+
+ 
+

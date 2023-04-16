@@ -1,0 +1,10 @@
+/* pages/index/childCpns/L-index_foot/L-indexfoot.wxss */
+.container{
+  margin-top: 40rpx;
+  text-align: center;
+}
+.content{
+  margin-top: 20rpx;
+  height: 650rpx;
+  width: 650rpx;
+}

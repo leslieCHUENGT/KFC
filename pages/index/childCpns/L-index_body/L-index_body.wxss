@@ -1,0 +1,23 @@
+/* pages/index/childCpns/L-index-body/L-index-body.wxss */
+.container{
+  margin-top: 50rpx;
+  text-align: center;
+}
+.container_top{
+  margin:0;border:0;padding:0;
+}
+.Kcard{
+  width: 650rpx;
+  height: 80rpx;
+  border-radius: 15px 15px 0px 0px;
+}
+.content{
+  margin-top: 0;
+
+
+  background-color: #f7f7fa;
+}
+.tohere{
+  width: 700rpx;
+  height: 500rpx;
+}

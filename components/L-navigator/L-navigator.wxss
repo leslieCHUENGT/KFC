@@ -1,0 +1,11 @@
+.navigator-container {
+  width: 100vw;
+  background-color: white;
+  position: fixed; 
+  top: 0;
+}
+
+.func-img {
+  width: 50rpx;
+  margin-left: 20rpx;
+}

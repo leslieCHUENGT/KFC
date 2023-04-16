@@ -1,0 +1,12 @@
+<!--pages/index/childCpns/L-index-body/L-index-body.wxml-->
+<view class="container">
+  <image src="http://m.qpic.cn/psc?/V517vkpU3Mdggm3rDovE4GNXD34Q1cqv/ruAMsa53pVQWN7FLK88i5pYUGAqaMMWJaAZZr.iTeTqQPABo5FMobmx64MpSmrJ2MStbIqrWN7b6WfUaDzDfdbY9CGULgkS.zr90XtEcDEk!/mnull&bo=tAE3ALQBNwADByI!&rf=photolist&t=5" class="Kcard" mode=""/>
+  <view class="container_head">
+  <view class="content">
+     <image src="http://m.qpic.cn/psc?/V517vkpU3Mdggm3rDovE4GNXD34Q1cqv/ruAMsa53pVQWN7FLK88i5pYUGAqaMMWJaAZZr.iTeToHA6.VWDX7ga7XwEFGQTr4Pj4YT7BryN5NQ*C5F46cC*MzEAYDyoIm633S7JWbpwQ!/mnull&bo=8AFkAfABZAEBByA!&rf=photolist&t=5" class="tohere" mode=""/>
+    <view class="content_body">
+    <text>热门推荐</text>
+    </view>
+  </view>
+</view>
+</view>

@@ -1,3 +1,14 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "L-map":"/components/L-map/L-map",
+    "L-platoon":"/components/L-platoon/L-platoon",
+    "L-privacy":"/components/L-privacy/L-privacy",
+    "L-index_head":"./childCpns/L-index_head/L-index_head",
+    "L-index_body":"./childCpns/L-index_body/L-index_body",
+    "L-index_foot":"./childCpns/L-index_foot/L-index_foot",
+    "L_swiper":"/components/L_swiper/L_swiper",
+    "L-navigator":"/components/L-navigator/L-navigator"
+  },
+  "navigationStyle": "custom"
+
 }

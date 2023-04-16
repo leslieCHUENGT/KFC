@@ -1,21 +1,11 @@
-.home {
+._container{
+  background-color: #f4f4f4;
+  height: 2200rpx;
 }
-.tst_banners {
-  height: 650rpx;
+.container_head{
+  display: flex;
+  justify-content: flex-end;
 }
-.tst_banners image {
-  width: 100vw;
-  height:650rpx;
-}
-.page__bd {
-  position: relative;
-  /* height: 20vh; */
-  /* background: green; */
-  top: -60rpx;
-  padding: 0 32rpx;  
-}
-.tst_userinfo {
-  background-color: #fff;
-  height: 160rpx;
-  border-radius: 26rpx;
+.container_head L-map{
+  flex: 1;
 }

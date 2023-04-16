@@ -1,0 +1,8 @@
+<!-- 自定义导航栏 -->
+<view class="navigator-container" style="height: {{navHeight}};">
+  <!-- 功能栏 -->
+  <view class="func-container" style="height: {{navHeight - navTop}}px; margin-top: {{navTop}}px; width: {{navWidth - 10}}px">
+    <!-- 显示品牌图片 -->
+    <image class="func-img" src="/images/icon/_home.png" style="height: {{funcBarHeight}}px;" />
+  </view>
+</view>

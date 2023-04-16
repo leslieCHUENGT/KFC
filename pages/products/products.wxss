@@ -1,0 +1,240 @@
+
+.main-container{
+  margin-top: 120rpx;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 90vh;
+  overflow: auto;
+}
+
+.left-menu{
+  margin-top: 10rpx;
+  width:150rpx;
+  height:90vh;
+}
+
+.menu-list{
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  background-color: #fff;
+  margin:10rpx 10rpx 10rpx 10rpx;
+  padding:20rpx 20rpx 20rpx 25rpx;
+  overflow: auto;
+  font-size: 30rpx;
+  color: rgb(95, 95, 95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.menu-list-selected{
+  margin: 0;
+  border-left: 5rpx solid #ff8a06;
+  color: #ff0000;
+}
+
+
+.right-content{
+  width: 600rpx;
+  height: 80vh;
+}
+.item-title{
+  text-align: left;
+  color: #0a0a0a;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+  height: 40rpx;
+}
+.item-list{
+  height: 240rpx;
+  display: flex;
+  background-color: #fff;
+  margin: 10rpx 10rpx 0 10rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 3rpx 5rpx 3rpx #eee;
+
+}
+
+.item-image-box{
+  width:350rpx;
+  margin-top: 15rpx;
+}
+.item-image{
+  width: 100%;
+  overflow: hidden;
+}
+.item-detail{
+  width: 350rpx;
+  padding: 10rpx;
+  position: relative;
+}
+.item-name{
+  overflow: hidden;
+  position: absolute;
+  right: 20rpx;
+  color: black;
+}
+.collect{
+  position: absolute;
+  top:0rpx;
+  right:10rpx;
+  color: #ff0000;
+  font-size: 40rpx;
+}
+
+.item-price{
+  color: #ff4006;
+  position: absolute;
+  top: 60rpx;
+  right: 30rpx;
+}
+.counts-control{
+  position: absolute;
+  bottom: 20rpx;
+  right: 5rpx;
+  font-size: 40rpx;
+}
+.count-icon{
+  padding: 0rpx 10rpx;
+  font-size: 40rpx;
+  color: #ff0000;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 0 30rpx;
+  background-color: #a9a9a9;
+  color: white;
+  align-items: center;
+  font-size: 3vh;
+}
+.footer-selected{
+  background-color: #fdad51;
+}
+.bottom-icon{                                                                                                                                                                                
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bottom-icon icon{
+  font-size: 6vh;
+}
+.goodsNumber{
+  font-size: 30rpx;
+  position: relative;
+  right: 2vh;
+  bottom:2vh;
+  background-color: red;
+  color: white;
+  padding: 0 8rpx;
+  border-radius: 50%;
+}
+.cart-background{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  width: 100%;
+  height: 90vh;
+  top: 0;
+}
+.cart-detail{
+  position: fixed;
+  z-index: 300;
+  bottom: 10vh;
+  width: 100%;
+  background-color:white;
+
+}
+.cart-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 4rpx solid #eee;
+}
+.cart-scroll{
+  height: 50vh;
+}
+.cart-item{
+  padding: 20rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+}
+.amount-control{
+  display: inline-flex;
+}
+.amount-price{
+  padding:0 20rpx;
+  color: red;
+}
+
+.content-num{
+  padding: 0 10rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+
+
+ /**app.wxss**/
+ .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 引入了iconfont */
+@font-face {
+  font-family: 'iconfont';  /* project id 1504658 */
+  src: url('//at.alicdn.com/t/font_1504658_44vddg9in35.eot');
+  src: url('//at.alicdn.com/t/font_1504658_44vddg9in35.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1504658_44vddg9in35.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1504658_44vddg9in35.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1504658_44vddg9in35.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1504658_44vddg9in35.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e620";
+}
+
+.icon-starSelected:before {
+  content: "\e615";
+}
+
+.icon-cart:before {
+  content: "\e690";
+}
+
+.icon-trashcan:before {
+  content: "\e616";
+}
+
+.icon-subtract:before {
+  content: "\e61f";
+}
+.icon-star:before {
+  content: "\e68a";
+}

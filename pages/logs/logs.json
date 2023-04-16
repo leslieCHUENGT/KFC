@@ -1,4 +1,7 @@
 {
-  "navigationBarTitleText": "查看启动日志",
-  "usingComponents": {}
+  "usingComponents": {
+    "L-user":"./childCpns/L-user/L-user",
+    "L-navigator":"/components/L-navigator/L-navigator"
+  },
+  "navigationStyle": "custom"
 }

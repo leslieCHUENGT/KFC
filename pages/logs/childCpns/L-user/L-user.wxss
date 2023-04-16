@@ -1,0 +1,41 @@
+/* pages/logs/childCpns/L-user.wxss */
+.top{
+  margin-top: 170rpx;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 80rpx;
+}
+.list{
+  display: flex;
+  margin-bottom:80rpx ;
+  align-items: center;
+}
+.name{
+  font-size: 50rpx;
+  font-weight: 700;
+}
+.phonenum{
+  font-size: 20rpx;
+  font-weight: 500;
+}
+
+.avatar{
+  margin-left: 50rpx;
+  border: 4rpx solid #fff;
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
+}
+.container{
+  margin-left: 50rpx;
+  margin-right: 50rpx ;
+}
+.esc{
+  padding: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 60rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  border:1px solid rgb(117, 114, 114)
+}

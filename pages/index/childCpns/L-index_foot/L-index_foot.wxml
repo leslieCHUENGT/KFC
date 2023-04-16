@@ -1,0 +1,7 @@
+<!--pages/index/childCpns/L-index_foot/L-indexfoot.wxml-->
+<view class="container">
+  <text>WOW会员</text>
+  
+  <image src="http://m.qpic.cn/psc?/V517vkpU3Mdggm3rDovE4GNXD34Q1cqv/ruAMsa53pVQWN7FLK88i5uJa0faHLrRAi4BsW7IoP7EEzRnnU3i.Rxilyx5mHql2Lj3Ii2tsonrkuwddXOgSEz0x594lx28W6mFcbmZxoPk!/mnull&bo=sAHcAbAB3AEBByA!&rf=photolist&t=5" class="content" mode=""/>
+  
+</view>

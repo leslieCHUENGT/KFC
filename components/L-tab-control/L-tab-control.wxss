@@ -1,0 +1,15 @@
+/* components/L-tab--control/L-tab--control.wxss */
+.page{
+  background-color: #f6f6f6;
+  height: 1300rpx;
+}
+.images{
+  margin-top: 200rpx;
+  display:flex;
+  justify-content: center
+}
+.button{
+  display:flex;
+  justify-content: center;
+  margin-top: 100rpx;
+}

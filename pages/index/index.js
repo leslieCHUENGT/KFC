@@ -1,56 +1,95 @@
-// index.js
-// 获取应用实例
-const app = getApp()
-
+// pages/index/index.js
+const app = getApp() // 获取app实例
 Page({
+  /**
+   * 页面的初始数据
+   */
   data: {
-    banners: [
-      {
-        id: 1,
-        pic:'https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/162038/16/32655/68895/637598caE41a32aeb/739f9cd30edf2383.jpg!q80.dpg',
-      },
-      {
-        id: 2,
-        pic: 'https://m.360buyimg.com/mobilecms/s843x843_jfs/t1/222561/8/16718/198784/62ce66e4E44808eaa/693a08e8ba9d78e4.jpg!q70.dpg.webp'
-      },
-      {
-        id: 3,
-        pic: 'https://m.360buyimg.com/mobilecms/s843x843_jfs/t1/137222/12/24601/95100/62d4b4d2E7f093638/9dcef4f18a221085.jpg!q70.dpg.webp'
-      }
-    ]
+    bar:0, // tabbar会改变这个值，不同页的搜索框会有不同的内容
+    navHeight:app.globalData.navHeight,
+    navTop:app.globalData.navTop,
+    objectheight:app.globalData.objectheight,
+    active: true,
+    topNum: 0
   },
-  // 事件处理函数
-  bindViewTap() {
+  barClick(){
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '/pages/index/index',
     })
   },
-  onLoad() {
-    if (wx.getUserProfile) {
-      this.setData({
-        canIUseGetUserProfile: true
-      })
-    }
+  goTop: function() {
+    this.setData({
+        topNum: this.data.topNum = 0
+    });
   },
-  getUserProfile(e) {
-    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        console.log(res)
+  mapClick(){
+    wx.navigateTo({
+      url: './childCpns/map/map',
+    })
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad() {
+    wx.request({
+      url: 'https://www.fastmock.site/mock/5980c22bf140b3094c8a20a72a579bf1/app/index',
+      success:(res)=>{
+        const{
+          banners
+        } = res.data
         this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
+          banners
         })
       }
     })
   },
-  getUserInfo(e) {
-    // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
-    console.log(e)
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
   }
 })

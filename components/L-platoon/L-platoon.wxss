@@ -1,0 +1,17 @@
+/* components/L-platoon/L-platoon.wxss */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  margin-top: 60rpx;
+}
+.container .close {
+  margin-top: 42rpx;
+}
+.container image{
+  Background-size:cover
+}

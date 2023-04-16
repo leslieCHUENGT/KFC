@@ -1,0 +1,10 @@
+<view class="page">
+<van-tabs active="{{ active }}" bind:change="onChange" >
+  <van-tab wx:for="{{order.orderList}}"  title="{{item.title}}" wx:key="id" name="{{item.title}}">
+    <view class="images">
+     <image src="{{item.img}}" mode="aspectFill"></image>
+    </view>
+    <van-button class="button" round type="info" color="#d62f35" bind:click="orderClick">{{item.text}}</van-button>
+  </van-tab>
+</van-tabs>
+</view>

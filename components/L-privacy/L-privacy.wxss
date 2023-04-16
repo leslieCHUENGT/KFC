@@ -1,0 +1,5 @@
+/* components/L-privacy/L-privacy.wxss */
+.page{
+  margin-top: 26rpx;
+  font-size: 22rpx;
+}

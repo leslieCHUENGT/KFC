@@ -1,0 +1,14 @@
+/* components/L-map/L-map.wxss */
+.page_map{
+  display: flex;
+  align-items: center;
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+}
+.page image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.page text{
+  font-size: 12pt;
+}

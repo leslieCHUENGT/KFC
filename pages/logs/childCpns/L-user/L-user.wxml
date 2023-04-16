@@ -1,0 +1,17 @@
+<view class="top">
+</view>
+<view class="list">
+  <image src="https://www.bing.com/th?id=OIP.5eDlnuw1pdOscV0wcYJa8gAAAA&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" class="avatar" mode=""/>
+  <view class="message">
+        <view class="name">请设置昵称</view>
+        <view class="state">
+          <text class="phonenum">182****1937</text>
+        </view>
+  </view>
+</view>
+<view class="container" wx:for="{{user}}" wx:key="id">
+  <van-cell title="{{item.content}}" is-link />
+</view>
+<view class="esc">
+  <text>退出登入</text>
+</view>

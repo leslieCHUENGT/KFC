@@ -1,0 +1,14 @@
+/* components/w-swiper/w-swiper.wxss */
+.container{
+  text-align: center;
+}
+.swiper {
+  margin: 0 auto;
+  margin-top: 0rpx;
+  height: 360rpx;
+  width: 750rpx;
+}
+
+.swiper-image {
+  width: 100%;
+}

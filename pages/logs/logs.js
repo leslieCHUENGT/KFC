@@ -1,18 +1,80 @@
-// logs.js
-const util = require('../../utils/util.js')
-
+// pages/logs/logs.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    logs: []
+   
   },
-  onLoad() {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return {
-          date: util.formatTime(new Date(log)),
-          timeStamp: log
-        }
-      })
+  barClick(){
+    wx.switchTab({
+      url: '/pages/index/index',
     })
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
+    wx.request({
+      url: 'https://www.fastmock.site/mock/5980c22bf140b3094c8a20a72a579bf1/app/user',
+      success:(res)=>{
+        const{
+          user
+        } = res.data
+        this.setData({
+          user
+        })
+      }
+    })
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
   }
 })

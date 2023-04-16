@@ -1,0 +1,16 @@
+<van-overlay show="{{eventShow}}">
+  <view class="container">
+  
+  <image 
+      mode="widthFix"
+      src="http://m.qpic.cn/psc?/V517vkpU3Mdggm3rDovE4GNXD34Q1cqv/ruAMsa53pVQWN7FLK88i5uJa0faHLrRAi4BsW7IoP7EabONSKcTojwuncoSX1WWScB91uUglDJ8tzMWBpqn3wFes42Tor6TC.mLAZZmIWrk!/mnull&bo=gQFhAgAAAAADB8E!&rf=photolist&t=5"
+      />
+      <van-icon 
+        custom-class="close" 
+        name="close"
+        size="64rpx"
+        color="#fff"
+        bind:click="closeEvent"
+      />
+  </view>
+</van-overlay>

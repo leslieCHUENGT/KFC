@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "L-navigator":"/components/L-navigator/L-navigator"
+  },
+  "navigationStyle": "custom"
+}

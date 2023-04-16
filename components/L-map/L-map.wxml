@@ -1,0 +1,6 @@
+<view class="page">
+    <view class="page_map" >
+      <image src="/images/icon/map.png" mode="" />
+      <text>南昌县  ^</text>
+    </view>
+</view>

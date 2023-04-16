@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "L-tab-control":"/components/L-tab-control/L-tab-control",
+    "L-navigator":"/components/L-navigator/L-navigator"
+  }
+}
